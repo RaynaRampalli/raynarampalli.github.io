@@ -96,15 +96,31 @@
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>Current Research Interests: We Exist in the (Galactic) Context</h3>
-								<p> I use stars as tools to understand the Milky Way's evolution and the planets within it. We are at an exciting time in astronomy, where the many large astrometric, spectroscopic, and photometric surveys of stars in our Galaxy
-								have begun to unify and entangle the sub-fields of exoplanets, stars, and galaxies. Much of my work is representative of this shift. Click the tabs to read more, stay tuned for future updates, and please contact me if you're interested in collaborating!
+	<h3>Current Research Interests: We Exist in the (Galactic) Context</h3>
 
-									<ul class="icons">
-							 <span><i class="ai ai-ads-square ai-2x"></i><span><a href="https://ui.adsabs.harvard.edu/search/q=%20%20author%3A%22Rampalli%2C%20R%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS</a></span>
-							 <i class="ai ai-orcid-square ai-2x"></i><span><a href="https://orcid.org/0000-0001-7337-5936">ORCID</a></span>
-							</ul>
+<p>
+I use stars as tools to understand the Milky Way's evolution and the planets within it. We're at an exciting moment in astronomy, where massive astrometric, spectroscopic, and photometric surveys are unifying the once-separated subfields of exoplanets, stellar physics, and Galactic dynamics. Much of my work sits at this intersection.
+</p>
 
+<!-- Insert image about Rbirth migration -->
+<p align="center">
+  <img src="images/planet_rbirth.png" alt="Planet hosts in [Fe/H]–[α/Fe] space with Rbirth contours" width="90%">
+</p>
+<p>
+<b>Figure:</b> When we account for Galactic dynamics and stellar radial migration, we’ve effectively <i>radially surveyed</i> more of the Milky Way than we realize! This plot shows confirmed planet host stars in [Fe/H]–[α/Fe] space (GALAH, left) and [Fe/H]–[Mg/Fe] (APOGEE, right), colored by their inferred Galactic birth radius. Contours trace lines of constant <i>R<sub>birth</sub></i> based on the model from <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527..321W/abstract">Wang+2023</a> and <i>Mills+in prep</i>. Star-planet systems have migrated towards 
+	the solar neighborhood from the inner-most and the outer-most parts of our Galaxy. Figure from <i>Rampalli+2025</i>.
+</p>
+
+<p>
+My work relies on <b>stellar abundances</b>, <b>kinematics</b>, and <b>ages</b> inferred from large survey data to explore how planetary systems form and evolve across the Milky Way.
+To support this, I have (finally) packaged up my TESS rotation period pipeline (developed in <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...958...76R/abstract">Rampalli+2023</a>) into an open-source tool: <b><a href="https://github.com/RaynaRampalli/protify">Protify</a></b>. It enables robust measurement and validation of stellar rotation periods using Lomb-Scargle periodograms, and includes a classifier (inspired by <a href="https://ui.adsabs.harvard.edu/abs/2024AJ....167..189C/abstract">Colman+2024</a>) trained on benchmark open cluster stars. Check it out! 
+</p>
+
+<!-- Professional links -->
+<ul class="icons">
+  <li><i class="ai ai-ads-square ai-2x"></i> <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Rampalli%2C%20R%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS</a></li>
+  <li><i class="ai ai-orcid-square ai-2x"></i> <a href="https://orcid.org/0000-0001-7337-5936">ORCID</a></li>
+</ul>
 
 
 								<hr />
@@ -115,20 +131,36 @@
 <div class="panel">
 	<br>
 
-	<p><b>Do metallicity trends and Galactic structure influence Hot Jupiter occurrence? (It sure looks like it!)</b></p>
+	<p><b>Can the Galactic-scale distribution of Hot Jupiters be explained by the giant planet–metallicity dependence alone? (It seems like it!)</b></p>
 
 	<p>
-	It is commonly known that hot Jupiters are more likely to form around high-metallicity stars, but what happens when this correlation is projected onto Galactic scales? In this toy model study, we injected Hot Jupiters based on a metallicity-dependent power law into stars from the GALAH and APOGEE surveys and a Milky Way–like simulation from the NIHAO suite. We then studied how occurrence rates vary as a function of stars’ Galactic birth radius and kinematic phase-space density (i.e., how clustered or isolated stars are in 6D position-velocity space).
+	It is commonly known that Hot Jupiters are more likely to form around high-metallicity stars, but what happens when this correlation is projected onto Galactic scales? In this toy model study, we injected Hot Jupiters based on a metallicity-dependent power law into stars from the GALAH and APOGEE surveys and a Milky Way–like simulation from the NIHAO suite. We then studied how occurrence rates vary as a function of stars’ Galactic birth radius and kinematic phase-space density (i.e., how clustered or isolated stars are in 6D position–velocity space).
 	</p>
 
 	<p>
-	Across all samples, we find that Hot Jupiter occurrence decreases with increasing birth radius beyond 5 kpc, reflecting the Milky Way’s inside-out formation and radial metallicity gradient. However at < 5 kpc, the trend depends on survey selection effects that yield different makeups of underlying Galactic stellar populations: APOGEE and NIHAO, which contain more high-a sequence (thick disk) stars in the inner Galaxy, show a turnover, whereas GALAH does not (majority thin disk stars like our Sun). 
+	Across all samples, we find that Hot Jupiter occurrence decreases with increasing birth radius beyond 5 kpc, reflecting the Milky Way’s inside-out formation and radial metallicity gradient. However, at < 5 kpc, the trend depends on survey selection effects that yield different makeups of underlying Galactic stellar populations: APOGEE and NIHAO, which contain more high-α sequence (thick disk) stars in the inner Galaxy, show a turnover, whereas GALAH does not (majority thin disk stars like our Sun). 
 	</p>
 
-	<p>
-	We also recover the result from <a href="https://ui.adsabs.harvard.edu/abs/2020Natur.586..528W/abstract" > Winter et al. (2020) </a>, where over 92% of Hot Jupiters are associated with stars in kinematic phase-space overdensities. However, our findings show that this clustering preference reflects chemical and kinematic differences: stars in overdensities are more likely to be metal-rich, low-α, and kinematically cooler (or part of the low-α sequence/thin disk) —exactly the stars more likely to host Hot Jupiters. In this way, we show that classic planet–metallicity correlations naturally manifest as occurrence trends across Galactic structure, with no additional environmental effects necessarily required. This work was done in collaboration with Professor Melissa Ness, Professor <a href="https://newton.host.dartmouth.edu/index.html" > Elisabeth Newton</a>,  Professor <a href="https://avanderburg.github.io/">Andrew Vanderburg</a>, 
-Dr. <a href="https://tobias-buck.de/">Tobias Buck</a>, and Jessica Mills. 
+	<!-- Insert Figure -->
+	<p align="center">
+		<img src="images/rbirth_hj.png" alt="Simulated Hot Jupiter occurrence vs Rbirth" width="90%">
 	</p>
+	<p><b>Figure:</b> Simulated Hot Jupiter occurrence as a function of stellar birth radius (\(R_{\mathrm{birth}}\)) using a metallicity-based injection model. GALAH, APOGEE, and NIHAO stars all show declining occurrence with increasing \(R_{\mathrm{birth}}\), but differences at small radii reflect variations in the thin disk (low-α sequence) vs. thick disk (high-α sequence) makeup of the surveys—as seen in their differing metallicities, α-enrichments, and stellar kinematics.</p>
+
+	<p>
+	We also recover the result from <a href="https://ui.adsabs.harvard.edu/abs/2020Natur.586..528W/abstract">Winter et al. (2020)</a>, where over 92% of Hot Jupiters are associated with stars in kinematic phase-space overdensities. However, our findings show that this clustering preference reflects chemical and kinematic differences: stars in overdensities are more likely to be metal-rich, low-α, and kinematically cooler (i.e., part of the low-α sequence/thin disk)—exactly the stars more likely to host Hot Jupiters. In this way, we show that classic planet–metallicity correlations naturally manifest as occurrence trends across Galactic structure, with no additional environmental effects necessarily required.
+	</p>
+
+	<!-- Insert Table -->
+	<p align="center">
+		<img src="images/hj_tbl.png" alt="Phase-space overdensity composition table" width="75%">
+	</p>
+	<p><b>Table:</b> Composition of phase-space overdensity and underdensity populations across GALAH, APOGEE, and the NIHAO simulation. Overdensities are dominated by thin disk (low-α) stars, while underdensities are enriched in thick disk (high-α) stars. These structures trace chemically distinct Galactic components, though not perfectly.</p>
+
+	<p>
+	This work was done in collaboration with Professor Melissa Ness, Professor <a href="https://newton.host.dartmouth.edu/index.html">Elisabeth Newton</a>, Professor <a href="https://avanderburg.github.io/">Andrew Vanderburg</a>, Dr. <a href="https://tobias-buck.de/">Tobias Buck</a>, and Jessica Mills.
+	</p>
+</div>
 
 	
 </div>
