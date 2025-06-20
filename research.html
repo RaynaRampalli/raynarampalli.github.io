@@ -1,233 +1,130 @@
 <!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-  <title>Research</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <style>
-    .accordion {
-      background-color: #eee;
-      color: #444;
-      cursor: pointer;
-      padding: 1em 1.5em;
-      width: 100%;
-      text-align: left;
-      border: none;
-      outline: none;
-      font-size: 1.1em;
-      font-weight: bold;
-      letter-spacing: 0.03em;
-      transition: 0.3s;
-      border-top: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-
-    .accordion:first-of-type {
-      border-top: 2px solid #ccc;
-    }
-
-    .accordion.active, .accordion:hover {
-      background-color: #ccc;
-    }
-
-    .accordion:after {
-      content: '\002B';
-      color: #777;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
-
-    .accordion.active:after {
-      content: "\2212";
-    }
-
-    .panel {
-      padding: 0 1.5em;
-      background-color: white;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      box-sizing: border-box;
-    }
-  </style>
-</head>
-<body class="is-preload">
-  <div id="page-wrapper">
-    <!-- Header -->
-    <header id="header">
-      <h1><a href="index.html">Rayna Rampalli</a></h1>
-      <nav id="nav">
-        <ul>
-          <li class="special">
-            <a href="#menu" class="menuToggle"><span>Menu</span></a>
-            <div id="menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="outreach.html">Outreach</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main -->
-    <article id="main">
-      <header><h2>Research</h2></header>
-      <section class="wrapper style5">
-        <div class="inner">
-
-          <h3>Current Research Interests: We Exist in the (Galactic) Context</h3>
-
-          <p>
-          I use stars as tools to understand the Milky Way's evolution and the planets within it. We're at an exciting moment in astronomy, where massive astrometric, spectroscopic, and photometric surveys are unifying the once-separated subfields of exoplanets, stellar physics, and Galactic dynamics. Much of my work sits at this intersection.
-          </p>
-
-          <p>
-          When we account for Galactic dynamics and stellar radial migration, we’ve effectively surveyed more of the Milky Way than we realize. This plot shows confirmed planet host stars in [Fe/H]–[α/Fe] space (GALAH, left) and [Fe/H]–[Mg/Fe] (APOGEE, right), colored by their inferred Galactic birth radius. Contours trace lines of constant Galactic birth radius based on the model from <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527..321W/abstract">Wang+2023</a> and Mills et al. (in prep). Planet host systems have migrated toward the solar neighborhood from the inner- and outer-most parts of the Galaxy. Figure from Rampalli et al. (2025).
-          </p>
-
-          <p align="center">
-            <img src="images/planet_rbirth.png" alt="Planet hosts in [Fe/H]–[α/Fe] space with Galactic birth radius contours" width="90%">
-          </p>
-
-          <p>
-          Much of my work uses <b>stellar abundances</b>, <b>kinematics</b>, and <b>ages</b> inferred from large spectroscopic and astrometric surveys to study how planetary systems form and evolve across Galactic environments.
-          To support this, I’ve packaged my TESS rotation period measurement and validation pipeline (developed in <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...958...76R/abstract">Rampalli+2023</a>) into an open-source tool: <b><a href="https://github.com/RaynaRampalli/protify">Protify</a></b>. It enables robust detection and classification of stellar rotation periods using Lomb-Scargle periodograms, and includes a trained classifier inspired by <a href="https://ui.adsabs.harvard.edu/abs/2024AJ....167..189C/abstract">Colman+2024</a>.
-          </p>
-
-          <ul class="icons">
-            <li><i class="ai ai-ads-square ai-2x"></i> <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Rampalli%2C%20R%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS</a></li>
-            <li><i class="ai ai-orcid-square ai-2x"></i> <a href="https://orcid.org/0000-0001-7337-5936">ORCID</a></li>
-          </ul>
-
-          <hr />
-          <h3>Research Projects</h3>
-
-          <!-- Insert accordions here -->
-<!-- Accordions start here -->
-
-<button class="accordion">Galactic Hot Jupiter Occurrence</button>
-<div class="panel">
-  <br>
-  <p><b>Can the Galactic-scale distribution of Hot Jupiters be explained by the giant planet–metallicity dependence alone? (It seems like it!)</b></p>
-  <p>
-    It is commonly known that Hot Jupiters are more likely to form around high-metallicity stars, but what happens when this correlation is projected onto Galactic scales? In this toy model study, we injected Hot Jupiters based on a metallicity-dependent power law into stars from the GALAH and APOGEE surveys and a Milky Way–like simulation from the NIHAO suite. We then studied how occurrence rates vary as a function of stars’ Galactic birth radius and kinematic phase-space density.
-  </p>
-  <p>
-    Across all samples, we find that Hot Jupiter occurrence decreases with increasing Galactic birth radius beyond 5 kpc. However, at < 5 kpc, the trend depends on survey selection effects: APOGEE and NIHAO, which contain more high-alpha (thick disk) stars, show a turnover, whereas GALAH (dominated by thin disk stars) does not.
-  </p>
-  <p align="center">
-    <img src="images/rbirth_hj.png" alt="Simulated Hot Jupiter occurrence vs Galactic birth radius" width="90%">
-  </p>
-  <p>
-    Simulated Hot Jupiter occurrence using a metallicity-based injection model. GALAH, APOGEE, and NIHAO stars all show declining occurrence with increasing birth radius, but differences at small radii reflect variations in the thin disk vs. thick disk makeup of the surveys, as seen in their differing metallicities, alpha-enrichments, and stellar kinematics.
-  </p>
-  <p>
-    We also recover the result from <a href="https://ui.adsabs.harvard.edu/abs/2020Natur.586..528W/abstract">Winter et al. (2020)</a>, where over 92% of Hot Jupiters are associated with stars in kinematic overdensities. But these overdensities are more metal-rich, low-alpha, and kinematically cooler—i.e., thin disk stars. Thus, the observed clustering of Hot Jupiters reflects classic planet–metallicity trends rather than a new environmental effect.
-  </p>
-  <p align="center">
-    <img src="images/hj_tbl.png" alt="Phase-space overdensity composition table" width="75%">
-  </p>
-  <p>
-    Composition of overdensity and underdensity populations across GALAH, APOGEE, and NIHAO. Overdensities are dominated by thin disk stars, while underdensities trace thicker disk populations.
-  </p>
-</div>
-
-<button class="accordion">The Sun's Unique(ish) Chemistry</button>
-<div class="panel">
-  <br>
-  <p><b>Is the Sun's apparent refractory depletion associated with its planet-host status? (Not necessarily)</b></p>
-  <p>
-    The Sun shows a depletion in refractory elements compared to most solar twins. Some studies suggest this is due to planets locking up dust. We test this by comparing Sun-like stars with and without known planets.
-  </p>
-  <p>
-    We infer abundances for 17 elements for >17,000 solar analogs with Gaia RVS spectra using the Cannon. We find that the Sun remains refractory-depleted compared to other stars, regardless of planet status. This is inconsistent with models of planet-linked depletion.
-  </p>
-  <p align="center">
-    <img src="images/ref_depletion.jpeg" alt="Condensation trend among planet hosts and non-hosts" width="90%">
-  </p>
-  <p>
-    The slopes of abundance vs. condensation temperature are indistinguishable between solar analogs with and without planets. Planet locking mechanisms are therefore insufficient to explain the Sun's chemistry.
-  </p>
-</div>
-
-<button class="accordion">Young Stars in Eccentric Orbits</button>
-<div class="panel">
-  <br>
-  <p><b>When was the last fast-acting dynamical event in our Solar neighborhood? (Maybe < 120 Myr ago!)</b></p>
-  <p>
-    Stars are typically born on circular orbits, but spiral arms can quickly kick stars into eccentric paths. We study regions of the disk where such "wrinkles" exist in kinematic space.
-  </p>
-  <p>
-    We identify young, rapidly rotating stars with eccentric orbits using TESS and Gaia. Some are as young as the Pleiades but show high radial action, indicating a recent dynamical event.
-  </p>
-  <p align="center">
-    <img src="images/slicesProt.jpeg" alt="Young rotators in eccentric orbits" width="90%">
-  </p>
-  <p>
-    This work uses rotation periods as stellar age indicators. We confirm stars in dynamically hot regions are genuinely young.
-  </p>
-</div>
-
-<button class="accordion">Stellar Rotation Period Stability</button>
-<div class="panel">
-  <br>
-  <p><b>Are spot-modulated rotation periods reliable? (Yes!)</b></p>
-  <p>
-    We test rotation period repeatability across K2 campaigns for stars in the 670 Myr Praesepe cluster. In >95% of stars, periods agree within 0.3% across 2–3 observations.
-  </p>
-  <p>
-    This confirms that photometric modulation is a robust measure of stellar spin, not just spot geometry. We also identify dozens of new rotators in Praesepe and its tidal tails.
-  </p>
-  <p align="center">
-    <img src="images/lccomp.png" alt="Period stability between K2 campaigns" width="90%">
-  </p>
-  <p>
-    Period-period comparisons show most stars fall along a 1:1 line, with very few harmonics or outliers.
-  </p>
-</div>
-
-<button class="accordion">Dimensionality of Gaia RVS</button>
-<div class="panel">
-  <br>
-  <p><b>How many stellar labels describe Gaia RVS spectra? (Four seems sufficient)</b></p>
-  <p>
-    We model ARGOS and RAVE spectra with effective temperature, gravity, [Fe/H], and [alpha/Fe], and explain ~85% of spectral variance. Residuals are strongest around the calcium lines.
-  </p>
-  <p>
-    Using these four labels, we accurately reproduce individual element abundances (Si, O, Ca, Ni, Al) to within 0.03 dex in APOGEE. For Gaia-RVS resolution, higher precision gains little.
-  </p>
-  <p align="center">
-    <img src="images/argos.png" alt="Spectral fit with 4-label model" width="90%">
-  </p>
-</div>
-
-<button class="accordion">K2-308b: An NGC 1817 Interloper</button>
-<div class="panel">
-  <br>
-  <p><b>Did we find the first transiting Hot Saturn in a cluster? (No.)</b></p>
-  <p>
-    K2-308b was thought to be in the 1 Gyr NGC 1817 cluster, which would make it a rare cluster planet. But Gaia astrometry reveals the host is a field interloper.
-  </p>
-  <p>
-    Still, this study showcased the power of seeing-limited photometry for vetting planet candidates in crowded fields, especially with TESS-sized pixels.
-  </p>
-  <p align="center">
-    <img src="images/k2gaia.png" alt="K2-308 in RA/Dec and PM space" width="90%">
-  </p>
-</div>
-
-<button class="accordion">Other (Pre-2018)</button>
-<div class="panel">
-  <br>
-  <p>
-    My earlier research includes work on H-alpha point sources at MMO (WIYN 2.1m), Hot Jupiter occurrence with Natalie Batalha and Joe Catanzarite at NASA Ames, and exoplanet transits during high school at Astronomy Camp, UC COSMOS, and MIT.
-  </p>
-</div>
-<!-- Accordions end here -->
+	<head>
+		<title>Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		.accordion {
+	  background-color: #eee;
+	  color: #444;
+	  cursor: pointer;
+	  padding: 10px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	  transition: 0.4s;
+	  display:block;
+	}
+	.active, .accordion:hover {
+	  background-color: #ccc;
+	}
+	.accordion:after {
+	  content: '\002B';
+	  color: #777;
+	  font-weight: bold;
+	  float: right;
+	  margin-left: 5px;
+	}
+	.active:after {
+	  content: "\2212";
+	}
+	.panel {
+	  padding: 0 18px;
+	  background-color: white;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	}
+	.center img {
+	  display:block;
+	  margin-left:auto;
+	  margin-right:auto;
+	}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<header id="header">
+				<h1><a href="index.html">Rayna Rampalli</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="aboutme.html">About Me</a></li>
+									<li><a href="research.html">Research</a></li>
+									<li><a href="outreach.html">Outreach</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<article id="main">
+				<header>
+					<h2>Research</h2>
+				</header>
+				<section class="wrapper style5">
+					<div class="inner">
+						<h3>Current Research Interests: We Exist in the (Galactic) Context</h3>
+						<p>
+						I use stars as tools to understand the Milky Way's evolution and the planets within it. We're at an exciting moment in astronomy, where massive astrometric, spectroscopic, and photometric surveys are unifying the once-separated subfields of exoplanets, stellar physics, and Galactic dynamics. Much of my work sits at this intersection. Click the tabs to learn more about my work—and feel free to reach out if you're interested in collaborating!
+						</p>
+						<p align="center">
+						  <img src="images/planet_rbirth.png" alt="Planet hosts in [Fe/H]–[α/Fe] space with galactic birth radius contours" width="70%">
+						</p>
+						<p>
+						When we account for Galactic dynamics and stellar radial migration, we’ve effectively surveyed more of the Milky Way than we realize! This plot shows confirmed planet host stars in [Fe/H]–[α/Fe] space (GALAH, left) and [Fe/H]–[Mg/Fe] (APOGEE, right), colored by their inferred galactic birth radius. Contours trace lines of constant galactic birth radius based on the model from <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527..321W/abstract">Wang+2023</a> and Mills+in prep. Star-planet systems have migrated toward the solar neighborhood from both the inner and outer Galaxy. From Rampalli+2025.
+						</p>
+						<p>
+						My work relies on <b>stellar abundances</b>, <b>kinematics</b>, and <b>ages</b> inferred from large survey data to explore how planetary systems form and evolve across the Milky Way. To support this, I’ve packaged up my TESS rotation period pipeline (developed in <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...958...76R/abstract">Rampalli+2023</a>) into an open-source tool: <b><a href="https://github.com/RaynaRampalli/protify">Protify</a></b>. It enables robust measurement and validation of stellar rotation periods using Lomb-Scargle periodograms, and includes a classifier (inspired by <a href="https://ui.adsabs.harvard.edu/abs/2024AJ....167..189C/abstract">Colman+2024</a>) trained on benchmark open cluster stars.
+						</p>
+						<ul class="icons">
+						  <li><i class="ai ai-ads-square ai-2x"></i> <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Rampalli%2C%20R%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS</a></li>
+						  <li><i class="ai ai-orcid-square ai-2x"></i> <a href="https://orcid.org/0000-0001-7337-5936">ORCID</a></li>
+						</ul>
+					</div>
+				</section>
+			</article>
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; Rayna Rampalli</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+			  panel.style.maxHeight = null;
+			} else {
+			  panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		  });
+		}
+		</script>
+	</body>
+</html>
